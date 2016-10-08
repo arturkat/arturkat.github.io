@@ -1,1 +1,180 @@
-"Hello World" 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!--[if lt IE 9]>
+    <script src="js/dist/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jQuery/jquery-1.11.1.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+  <script src="js/slider/jquery.bxslider.min.js"></script>
+  <!--<link href="css/jquery.bxslider.css" rel="stylesheet" />-->
+  <script type="text/javascript" src="js/script/Script.js"></script>
+
+  <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+  <title>PVPWAR</title>
+ </head>
+ <body>
+    <div id="wrapper">
+        <div id="frame">
+            <div id="logo">
+                <img src="img/logo.png" alt="logo"/>
+            </div>
+            <div id="slider-prev" class="button_left "></div>
+            <div id="slider-next" class="button_right"></div>
+            <div class="man_left"></div>
+            <div class="man_right"></div>
+
+            <div class="frame-info main">
+                <div class="frame-info-content">
+                    <div class="game-icon">
+                    </div>
+                    <div class="description">
+                        <p id="description_text"></p>
+                    </div>
+                    <div class="buttons">
+                        <a id="games_click_chooser" class="games_site">Сайт Игры</a>
+                        <span class="separator"></span>
+                        <a id="forum_click_chooser" class="games_forum">Форум</a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="bxslider">
+                <li>
+                    <div class="frame-info">
+                        <div class="frame-info-content">
+                            <div class="game-icon-1">
+                                <img src="img/about_icons/about_icon_rf.png" />
+                            </div>
+                            <div class="description">
+                                <p id="rf_promo"></p>
+                            </div>
+                            <div class="buttons">
+                                <a class="games_site" href="#rf_site">Сайт Игры</a>
+                                <span class="separator"></span>
+                                <a class="games_forum" href="#rf_forum">Форум</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/rf.jpg" />
+                </li>
+                <li>
+                    <div class="frame-info">
+                        <div class="frame-info-content">
+                            <div class="game-icon-2">
+                                <img src="img/about_icons/about_icon_cs.png"  />
+                            </div>
+                            <div class="description">
+                                <p id="cs_promo"></p>
+                            </div>
+                            <div class="buttons">
+                                <a class="games_site" href="#cs_site">Сайт Игры</a>
+                                <span class="separator"></span>
+                                <a class="games_forum" href="#cs_forum">Форум</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/cs.jpg" />
+                </li>
+                <li>
+                    <div class="frame-info">
+                        <div class="frame-info-content">
+                            <div class="game-icon-3">
+                                <img src="img/about_icons/about_icon_diablo.png"  />
+                            </div>
+                            <div class="description">
+                                <p id="diablo_promo"></p>
+                            </div>
+                            <div class="buttons">
+                                <a class="games_site" href="#diablo_site">Сайт Игры</a>
+                                <span class="separator"></span>
+                                <a class="games_forum" href="#diablo_forum">Форум</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/diablo.jpg" />
+                </li>
+                <li>
+                    <div class="frame-info">
+                        <div class="frame-info-content">
+                            <div class="game-icon-4">
+                                <img src="img/about_icons/about_icon_war3.png"  />
+                            </div>
+                            <div class="description">
+                                <p id="war3_promo"></p>
+                            </div>
+                            <div class="buttons">
+                                <a class="games_site" href="#war3_site">Сайт Игры</a>
+                                <span class="separator"></span>
+                                <a class="games_forum" href="#war3_forum">Форум</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/war3.jpg" />
+                </li>
+                <li>
+                    <div class="frame-info">
+                        <div class="frame-info-content">
+                            <div class="game-icon-5">
+                                <img src="img/about_icons/about_icon_starcraft.png" />
+                            </div>
+                            <div class="description">
+                                <p id="starcraft_promo"></p>
+                            </div>
+                            <div class="buttons">
+                                <a class="games_site" href="#starcraft_site">Сайт Игры</a>
+                                <span class="separator"></span>
+                                <a class="games_forum" href="#starcraft_forum">Форум</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/starcraft.jpg" />
+                </li>
+            </ul>
+
+            <nav id="menu_wrapper">
+                <ul id="game_chooser">
+                    <a data-slide-index="0" href="">
+                        <li class="chooser_item chooser_1">
+                             <img src="img/icon_rf.png"/>
+                             <img class="dev_icon_1" src="img/dev_icons/dev_icon_1.png" />
+                        </li>
+                    </a>
+                    <a data-slide-index="1" href="">
+                        <li class="chooser_item chooser_2">
+                            <img src="img/icon_cs.png"/>
+                            <img class="dev_icon_2" src="img/dev_icons/dev_icon_2.png" />
+                        </li>
+                    </a>
+                     <a data-slide-index="2" href="">
+                        <li class="chooser_item chooser_3">
+                            <img class="game_icon_inactive" src="img/icon_diablo2.png"/>
+                            <img class="dev_icon_3" src="img/dev_icons/dev_icon_3.png" />
+                        </li>
+                    </a>
+                    <a data-slide-index="3" href="">
+                        <li class="chooser_item chooser_4">
+                            <img class="game_icon_inactive" src="img/icon_warcraft.png"/>
+                            <img class="dev_icon_4" src="img/dev_icons/dev_icon_4.png" />
+                        </li>
+                    </a>
+                    <a data-slide-index="4" href="">
+                        <li class="chooser_item chooser_5">
+                            <img class="game_icon_inactive" src="img/icon_starcraft.png"/>
+                            <img class="dev_icon_5" src="img/dev_icons/dev_icon_5.png" />
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <footer>
+            <p>&copy; 2014 - PVPWAR.NET. All rights reserved.</p>
+            <img src="img/designed.png" />
+        </footer>
+    </div>
+ </body>
+</html>
