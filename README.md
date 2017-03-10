@@ -1,1 +1,1 @@
-# arturkat.github.io
+# arturkat.github.io/site-games-slider
