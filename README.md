@@ -1,1 +1,1 @@
-# arturkat.github.io/site-games-slider
+# http://arturkat.github.io/site-games-slider
